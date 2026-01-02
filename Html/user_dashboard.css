@@ -1,0 +1,40 @@
+*{
+  box-sizing:border-box;
+  font-family:sans-serif;
+}
+body{
+  margin:0;
+}
+.header, .footer{
+  text-align:center;
+  background-color:black;
+  color:white;
+  padding:10px;
+}
+
+.navbar a{
+  color:cyan;
+  text-decoration:none;
+}
+.navbar a:hover{
+  color:blue;
+}
+
+.container{
+  display:flex;
+  gap:15px;
+  padding:20px;
+}
+.card{
+  flex:1;
+  border:1px solid red;
+  padding:20px;
+  border-radius:10px;
+  text-align:center;
+  background-color:black;
+  color:white;
+}
+@media(max-width:768px){
+  .container{
+    flex:direction:column;}
+}

@@ -1,0 +1,14 @@
+header{
+  color:red;
+  background-color:black;
+}
+a,nav{
+  text-decoration:none;
+  color:cyan;
+}
+a,nav:hover{
+  color:red;
+}
+body{
+  font-family:Helvetica;
+}
