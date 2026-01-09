@@ -1,17 +1,18 @@
+import java.util.Set;
 import java.util.HashSet;
-import java.util.set;
 
-class Solution{
+
+class Substring{
     public int subtring(String s){
         Set<Character> set=new HashSet<>();
         int a=0,max=0;
-        for int(int b=0;b<s.length();n++){
+        for(int b=0;b<s.length();b++){
             while(set.contains(s.charAt(b))){
                 set.remove(s.charAt(a));
                 a++;
             }
             set.add(s.charAt(b));
-            max=Math.max(maxLen,b-a+1);
+            max=Math.max(max,b-a+1);
         }
         return max;
     }
